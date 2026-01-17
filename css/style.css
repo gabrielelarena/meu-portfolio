@@ -97,7 +97,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 999px;
   background: #1a2030;
   border: 1px solid #2a3145;
@@ -279,5 +279,38 @@ body {
 
   .work-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100VW;
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
   }
 }
